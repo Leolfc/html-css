@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LINKS</title>
+  <style>
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    a{
+      color: red;
+      text-decoration: none;
+    }
+    a:visited{
+      color: rgb(0, 139, 35);
+    }
+
+    .especial{
+      background-color: rgb(226, 67, 67);
+      color: rgb(219, 69, 69);
+    }
+    a:hover{
+      color: black;
+      text-decoration: underline;
+    }
+    a:active{
+      color: rgb(185, 204, 15);
+    }
+    .especial::before{
+      content: '⇒';
+    }
+    .especial a::after{
+      content: '⇐';
+      text-decoration: none;
+      font-weight: normal;
+      color: darkgrey;
+
+    }
+  </style>
+</head>
+<body>
+ <h1>Personalizando Links</h1>
+ <ul>
+  <li><a href="https://github.com/Leolfc" target="_blank">Repositorio GitHub</a></li>
+  <li class="especial"><a href="https://www.youtube.com/" target="_blank">Canal do Youtube</a></li>
+  <li class="especial"><a href="https://www.linkedin.com/in/leonardo-feliciano-da-costa-3a760b200/" target="_blank">Linkedin</a></li>
+ </ul>
+</body>
+</html>
