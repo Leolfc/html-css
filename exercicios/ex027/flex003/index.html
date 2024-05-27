@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+       .conteiner{     /* <!--Caixa Pai, SEMPRE USAR DISPLAY: FLEX--> */
+            background-color: blue;
+            height: 100px;
+            display: flex;
+            flex-flow: row wrap;
+           
+            
+           
+            
+        }
+
+            .item{  /*<!--Caixa Filho, SEMPRE USAR FLEX: AUTO*/
+                background-color: yellowgreen;
+                border: 2px solid black;
+               text-align: center;
+               flex: auto;
+               
+            }
+
+    </style>
+</head>
+<body>
+    <div class="conteiner"> <!--Caixa pai, SEMPRE USAR DISPLAY: FLEX-->
+        <div class="item">Exemplo de bloco A</div> <!--Caixa Filho-->
+        <div class="item">Exemplo de bloco B</div>
+        <div class="item">Exemplo de bloco C</div>
+        <div class="item">Exemplo de bloco D</div>
+        <div class="item">Exemplo de bloco E</div>
+        <div class="item">Exemplo de bloco F</div>
+        <div class="item">Exemplo de bloco G</div>
+    </div>
+</body>
+</html>
