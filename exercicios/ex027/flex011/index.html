@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+ 
+       <style>
+           .conteiner{     /* <!--Caixa Pai, SEMPRE USAR DISPLAY: FLEX--> */
+                background-color: blue;
+                display: flex;
+                flex-flow: row nowrap;
+           
+           
+            }
+                .item{  /*<!--Caixa Filho, SEMPRE USAR FLEX: AUTO*/
+                    background-color: yellowgreen;
+                    border: 2px solid black;
+                    text-align: center;
+                    flex-basis: 200px;
+                    
+                }
+
+                #cxA{
+                    flex-shrink: 1;
+                    flex-grow: 1;
+                }
+
+                #cxB{
+                flex-shrink: 1;
+              flex-grow: 1;
+                }
+                #cxC{
+              flex-shrink: 2;
+            flex-grow: 1;
+                }
+            </style>
+           </head>
+           <body>
+               <div class="conteiner"> <!--Caixa pai, SEMPRE USAR DISPLAY: FLEX-->
+      
+        <div class="item" id="cxA">Lorem ipsum dolor sit amet consectetur adipisicing elit. At enim laudantium quis optio fugit ipsa aut quae! Cupiditate esse asperiores architecto hic. Ipsam odit cumque veniam dolorem aperiam molestiae laudantium.</div> <!--Caixa Filho-->
+        <div class="item" id="cxB">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas dolor dolorem exercitationem. Corrupti aliquam animi quos voluptate culpa et, tempore perferendis beatae quae commodi suscipit? Delectus non quod in eum.</div>
+        <div class="item" id="cxC">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati quidem expedita omnis animi a labore ipsum dolorem odit ratione in reiciendis, eius laboriosam error. Aspernatur quia quibusdam ducimus debitis officiis.</div>
+        
+    </div>
+    
+</body>
+</html>
